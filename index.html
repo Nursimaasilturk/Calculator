@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <!-- Google Fonts link-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!--CSS Link-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="calculator--screen-part">
+          <div class="screen--modes">
+            <div class="screen--modes__light-dark">
+              <span class="material-symbols-outlined sun"> light_mode </span>
+              <span class="material-symbols-outlined moon"> dark_mode </span>
+              <div class="transition-ball"></div>
+            </div>
+            <div class="screen---modes__history-icon">
+              <span class="material-symbols-outlined"> update </span>
+            </div>
+          </div>
+          <div class="screen--operations">
+            <div class="screen--operations__history">
+              <div id="history-text">gawgae</div>
+            </div>
+            <div class="screen--operations__action">
+              <div class="equal-icon">=</div>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="calculator--buttons-part">
+          <div class="button-part--group">
+            <div class="button-part--group__function-keys">
+              <button class="item key">AC</button>
+              <button class="item key">+/-</button>
+              <button class="item key">%</button>
+            </div>
+            <div class="button-part--group__numbers">
+              <button class="item number">1</button>
+              <button class="item number">2</button>
+              <button class="item number">3</button>
+              <button class="item number">4</button>
+              <button class="item number">5</button>
+              <button class="item number">6</button>
+              <button class="item number">7</button>
+              <button class="item number">8</button>
+              <button class="item number">9</button>
+              <button class="item number">.</button>
+              <button class="item number">0</button>
+              <button class="item number">00</button>
+            </div>
+          </div>
+          <div class="button-part--basic-operations">
+            <button class="item operator">÷</button>
+            <button class="item operator">x</button>
+            <button class="item operator">-</button>
+            <button class="item operator">+</button>
+            <button id="equal" class="item operator">=</button>
+          </div>
+          <div class="bottom-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--JQuery Library-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
