@@ -87,10 +87,14 @@ body {
   justify-content: flex-end;
 }
 .screen--operations__history #history-text {
+  text-align: right;
   margin-right: 1rem;
-  width: auto;
+  width: 100%;
   font-size: 0.8rem;
   color: gray;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .screen--operations__action {
   width: 100%;
@@ -228,4 +232,82 @@ body {
 }
 .calculator.dark .button-part--basic-operations #equal {
   background-color: rgb(2, 42, 75);
+}
+.calculator.dark .history-box,
+.calculator.dark .history-box #first-eva:before,
+.calculator.dark .history-box #second-eva:before,
+.calculator.dark .history-box #third-eva:before {
+  background-color: rgb(3, 9, 61);
+  border-left: 2px solid rgb(3, 9, 61);
+}
+.calculator.dark .history-box h3 {
+  color: cyan;
+}
+.calculator.dark .history-box label {
+  color: deeppink;
+}
+.calculator.dark .history-box .input {
+  color: lightcoral;
+}
+.history-box {
+  background-color: paleturquoise;
+  width: 30vh;
+  height: 33vh;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 0.7rem;
+  display: none;
+  overflow: hidden;
+}
+.history-box.active {
+  display: block;
+  transition: 1s ease-in-out;
+}
+.history-box h3 {
+  margin: 0.5rem 3rem 0.5rem 3rem;
+  color: rgb(2, 42, 75);
+}
+.history-box label {
+  color: purple;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  font-weight: 700;
+}
+.history-box .input {
+  position: relative;
+  width: auto;
+  font-size: 0.7rem;
+  font-weight: 700;
+  outline: none;
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  color: slateblue;
+}
+.history-box #first-eva:before,
+.history-box #second-eva:before,
+.history-box #third-eva:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3%;
+  height: 100%;
+  width: 100%;
+  background-color: paleturquoise;
+  border-left: 2px solid paleturquoise;
+  animation: animate 5s steps(25) infinite;
+}
+@keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
 }

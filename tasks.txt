@@ -1,0 +1,4 @@
+--> sign özelliğini koy 
+--> yüzde hesabi yap.
+-->parantezlemeyi koy.
+--> klavyeden sayı girme işlemini yap.
