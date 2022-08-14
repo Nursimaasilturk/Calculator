@@ -54,7 +54,7 @@ body {
   background-color: rgba(169, 220, 253, 1);
 }
 .screen--modes__light-dark.active .transition-ball {
-  transform: translateX(36px) !important;
+  transform: translateX(33px) !important;
 }
 .transition-ball {
   position: absolute;

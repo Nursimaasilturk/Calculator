@@ -107,4 +107,32 @@ $(document).ready(function () {
     thirdCalc.innerHTML = calcArray[2] + "  -->  " + resultArray[2];
   });
   // ---> Keyboard Calculation
+  $("#operation").keypress(function(e){
+    if (e.keyCode === 13){
+      if (
+        operation.value === "0" ||
+        operation.value === " " ||
+        operation.value === null
+      ) {
+        swal({
+          title: "Stop!",
+          text: "Please,enter the values for evalution",
+          icon: "error",
+          button: "I got it ;))",
+        });
+      } else {
+        historyText.value = operation.value;
+        operation.value = eval(operation.value);
+        if (calcArray.length <= 2 && resultArray.length <= 2) {
+          calcArray.push(historyText.value);
+          resultArray.push(operation.value);
+        } else {
+          calcArray.shift();
+          calcArray.push(historyText.value);
+          resultArray.shift();
+          resultArray.push(operation.value);
+        }
+      }
+    }
+  })
 });
