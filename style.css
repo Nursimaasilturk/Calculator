@@ -11,11 +11,11 @@ body {
   justify-content: center;
 }
 .container {
-  width: 90%;
-  height: 90%;
+  width: 1680px;
+  height: 1050px;
   margin: 1rem auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .calculator {
@@ -54,12 +54,12 @@ body {
   background-color: rgba(169, 220, 253, 1);
 }
 .screen--modes__light-dark.active .transition-ball {
-  transform: translateX(33px) !important;
+  transform: translateX(42px) !important;
 }
 .transition-ball {
   position: absolute;
   top: 0;
-  left: -3%;
+  left: -1%;
   width: 45px;
   height: 31px;
   border-radius: 15px;
